@@ -14,3 +14,11 @@ struct SettingOptions {
     let description: (()-> Void)
     
 }
+
+struct SettingSwitchOption {
+    let title: String
+    let icon: UIImage?
+    let iconBackground: UIColor
+    let description: (()-> Void)
+    var isOn: Bool
+}

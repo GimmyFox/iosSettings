@@ -8,5 +8,10 @@
 import UIKit
 
 struct SectionSettings {
-    let options: [SettingOptions]
+    let options: [SettingOptionsType]
+}
+
+enum SettingOptionsType {
+    case staticCell(model: SettingOptions)
+    case switchCell(model: SettingSwitchOption)
 }
