@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Настройки"
         configure()
         setupHierarchy()
         tableView.delegate = self
