@@ -95,7 +95,7 @@ class ViewController: UIViewController {
             .staticCell(model: SettingOptions(title: "Face ID и код-пароль", icon: UIImage(systemName: "faceid"), iconBackground: .systemGreen) {
                 print("Нажата кнопка: Face ID и код-пароль")
             }),
-            .staticCell(model: SettingOptions(title: "Экстренный вызов - SOS", icon: UIImage(named: "sos"), iconBackground: .systemOrange) {
+            .staticCell(model: SettingOptions(title: "Экстренный вызов - SOS", icon: UIImage(named: "sos"), iconBackground: .systemRed) {
                 print("Нажата кнопка: Экстренный вызов - SOS")
             }),
             .staticCell(model: SettingOptions(title: "Аккумулятор", icon: UIImage(systemName: "battery.100"), iconBackground: .systemGreen) {
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
             })
                 ]))
         models.append(SectionSettings(options: [
-            .staticCell(model: SettingOptions(title: "App Store", icon: UIImage(named: "appstore"), iconBackground: .systemOrange) {
+            .staticCell(model: SettingOptions(title: "App Store", icon: UIImage(named: "appstore"), iconBackground: .systemBlue) {
                 print("Нажата кнопка: App Store")
             }),
             .staticCell(model: SettingOptions(title: "Wallet и Apple Pay", icon: UIImage(named: "wallet"), iconBackground: .black) {
@@ -151,13 +151,13 @@ class ViewController: UIViewController {
             .staticCell(model: SettingOptions(title: "Акции", icon: UIImage(named: "stock"), iconBackground: .systemBlue) {
                 print("Нажата кнопка: Акции")
             }),
-            .staticCell(model: SettingOptions(title: "Перевод", icon: UIImage(systemName: "wifi"), iconBackground: .black) {
+            .staticCell(model: SettingOptions(title: "Перевод", icon: UIImage(named: "translate"), iconBackground: .systemBlue) {
                 print("Нажата кнопка: Перевод")
             }),
             .staticCell(model: SettingOptions(title: "Карты", icon: UIImage(named: "maps"), iconBackground: .systemBlue) {
                 print("Нажата кнопка: Карты")
             }),
-            .staticCell(model: SettingOptions(title: "Компас", icon: UIImage(named: "compas"), iconBackground: .systemGreen) {
+            .staticCell(model: SettingOptions(title: "Компас", icon: UIImage(named: "compas"), iconBackground: .black) {
                 print("Нажата кнопка: Компас")
             }),
 
