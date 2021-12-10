@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var models = [SectionSettings]()
+    
     private let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
         table.register(SettingTableViewCell.self, forCellReuseIdentifier: SettingTableViewCell.identifier)

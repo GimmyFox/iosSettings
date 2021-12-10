@@ -7,17 +7,10 @@
 
 import UIKit
 
-class SettingOptions: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+struct SettingOptions {
+    let title: String
+    let icon: UIImage?
+    let iconBackground: UIColor
+    let description: (()-> Void)
+    
 }
