@@ -55,21 +55,25 @@ class SwitchTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        let size = contentView.frame.size.height - 12
-        iconContainer.frame = CGRect(x: 15, y: 6, width: size, height: size)
+        iconContainer.translatesAutoresizingMaskIntoConstraints = false
+        iconContainer.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        iconContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15).isActive = true
+        iconContainer.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        iconContainer.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        let imageSize = size/1.5
-        iconImageView.frame = CGRect(x: (size - imageSize) / 2, y: (size - imageSize) / 2, width: imageSize, height: imageSize)
-        label.frame = CGRect(x: 25 + iconContainer.frame.size.width,
-                             y: 0,
-                             width: contentView.frame.size.width - 20 - iconContainer.frame.size.width,
-                             height: contentView.frame.size.height)
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        iconImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        iconImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        mySwitch.sizeToFit()
-        mySwitch.frame = CGRect(x: contentView.frame.size.width - mySwitch.frame.size.width - 20,
-                                y: (contentView.frame.size.height - mySwitch.frame.size.height) / 2,
-                                width: mySwitch.frame.size.width,
-                                height: mySwitch.frame.size.height)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        label.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 15).isActive = true
+        
+        mySwitch.translatesAutoresizingMaskIntoConstraints = false
+        mySwitch.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        mySwitch.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15).isActive = true
     }
     
     override func prepareForReuse() {
