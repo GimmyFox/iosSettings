@@ -15,3 +15,17 @@ enum SettingOptionsType {
     case staticCell(model: SettingOptions)
     case switchCell(model: SettingSwitchOption)
 }
+
+struct SettingOptions {
+    let title: String
+    let icon: UIImage?
+    let iconBackground: UIColor
+    
+}
+
+struct SettingSwitchOption {
+    let title: String
+    let icon: UIImage?
+    let iconBackground: UIColor
+    var isOn: Bool
+}

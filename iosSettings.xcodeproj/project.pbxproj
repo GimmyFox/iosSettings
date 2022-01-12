@@ -16,9 +16,10 @@
 		978FF0D82763B22E008960E2 /* iosSettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF0D72763B22E008960E2 /* iosSettingsUITests.swift */; };
 		978FF0DA2763B22E008960E2 /* iosSettingsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF0D92763B22E008960E2 /* iosSettingsUITestsLaunchTests.swift */; };
 		978FF0E82763B93B008960E2 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF0E72763B93B008960E2 /* SettingTableViewCell.swift */; };
-		978FF0EA2763B9B5008960E2 /* SettingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF0E92763B9B5008960E2 /* SettingOptions.swift */; };
 		978FF0EC2763BA33008960E2 /* SectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF0EB2763BA33008960E2 /* SectionSettings.swift */; };
 		978FF0EE2763BCE0008960E2 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF0ED2763BCE0008960E2 /* SwitchTableViewCell.swift */; };
+		97F7B185278F6C160027C4B7 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7B184278F6C160027C4B7 /* SettingModel.swift */; };
+		97F7B187278F6C5C0027C4B7 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F7B186278F6C5C0027C4B7 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +53,10 @@
 		978FF0D72763B22E008960E2 /* iosSettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosSettingsUITests.swift; sourceTree = "<group>"; };
 		978FF0D92763B22E008960E2 /* iosSettingsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosSettingsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		978FF0E72763B93B008960E2 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
-		978FF0E92763B9B5008960E2 /* SettingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingOptions.swift; sourceTree = "<group>"; };
 		978FF0EB2763BA33008960E2 /* SectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSettings.swift; sourceTree = "<group>"; };
 		978FF0ED2763BCE0008960E2 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		97F7B184278F6C160027C4B7 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		97F7B186278F6C5C0027C4B7 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 			children = (
 				978FF0ED2763BCE0008960E2 /* SwitchTableViewCell.swift */,
 				978FF0E72763B93B008960E2 /* SettingTableViewCell.swift */,
+				97F7B186278F6C5C0027C4B7 /* SettingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,8 +189,8 @@
 		97F7B183278F68E60027C4B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				978FF0E92763B9B5008960E2 /* SettingOptions.swift */,
 				978FF0EB2763BA33008960E2 /* SectionSettings.swift */,
+				97F7B184278F6C160027C4B7 /* SettingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,10 +328,11 @@
 			files = (
 				978FF0BB2763B22A008960E2 /* ViewController.swift in Sources */,
 				978FF0B72763B22A008960E2 /* AppDelegate.swift in Sources */,
+				97F7B185278F6C160027C4B7 /* SettingModel.swift in Sources */,
+				97F7B187278F6C5C0027C4B7 /* SettingView.swift in Sources */,
 				978FF0EE2763BCE0008960E2 /* SwitchTableViewCell.swift in Sources */,
 				978FF0EC2763BA33008960E2 /* SectionSettings.swift in Sources */,
 				978FF0E82763B93B008960E2 /* SettingTableViewCell.swift in Sources */,
-				978FF0EA2763B9B5008960E2 /* SettingOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
