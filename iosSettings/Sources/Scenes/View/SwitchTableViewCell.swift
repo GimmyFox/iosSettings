@@ -55,25 +55,28 @@ class SwitchTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         iconContainer.translatesAutoresizingMaskIntoConstraints = false
-        iconContainer.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        iconContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15).isActive = true
-        iconContainer.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        iconContainer.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        
         iconImageView.translatesAutoresizingMaskIntoConstraints = false
-        iconImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15).isActive = true
-        iconImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        iconImageView.heightAnchor.constraint(equalToConstant: 30).isActive = true
-        
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        label.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 15).isActive = true
-        
         mySwitch.translatesAutoresizingMaskIntoConstraints = false
-        mySwitch.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        mySwitch.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15).isActive = true
+        
+        NSLayoutConstraint.activate([
+            iconContainer.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            iconContainer.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            iconContainer.widthAnchor.constraint(equalToConstant: 30),
+            iconContainer.heightAnchor.constraint(equalToConstant: 30),
+            
+            iconImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            iconImageView.widthAnchor.constraint(equalToConstant: 30),
+            iconImageView.heightAnchor.constraint(equalToConstant: 30),
+            label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            label.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 15),
+            mySwitch.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            mySwitch.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15)
+        ])
+
     }
     
     override func prepareForReuse() {
